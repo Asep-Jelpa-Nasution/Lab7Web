@@ -2,16 +2,18 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Debug\Toolbar\Collectors\Views;
-
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         return view('welcome_message');
     }
-    public function tambah()
+
+    public function home()
     {
-        return view('view/form_add'); // sesuaikan nama file view kamu
+        return view('home', [
+            'title' => 'Beranda',
+            'content' => 'Ini adalah halaman beranda menggunakan layout.'
+        ]);
     }
 }

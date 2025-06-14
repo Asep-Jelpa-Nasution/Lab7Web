@@ -1,11 +1,18 @@
 <?= $this->include('template/admin_header.php'); ?>
+<div class="d-flex justify-content-end mb-3">
+    <form method="GET" action="" class="d-flex" role="search">
+        <input type="text" name="keyword" class="form-control me-2" placeholder="Cari data">
+        <button class="btn btn-primary" type="submit">Cari</button>
+    </form>
+</div>
+
 <table class="table">
     <thead>
         <tr>
             <th>ID</th>
             <th>Judul</th>
             <th>Status</th>
-            <th>AKsi</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -30,13 +37,8 @@
             </tr>
         <?php endif; ?>
     </tbody>
-    <tfoot>
-        <tr>
-            <th>ID</th>
-            <th>Judul</th>
-            <th>Status</th>
-            <th>Aksi</th>
-        </tr>
-    </tfoot>
 </table>
+<div class="d-flex justify-content-center my-3">
+    <?= $pager->links('default', 'bootstrap_pagination') ?>
+</div>
 <?= $this->include('template/admin_footer.php'); ?>

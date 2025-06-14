@@ -20,10 +20,13 @@ class Pager extends BaseConfig
      *
      * @var array<string, string>
      */
-    public array $templates = [
+    public $templates = [
         'default_full'   => 'CodeIgniter\Pager\Views\default_full',
         'default_simple' => 'CodeIgniter\Pager\Views\default_simple',
         'default_head'   => 'CodeIgniter\Pager\Views\default_head',
+        'bootstrap'      => 'CodeIgniter\Pager\Views\bootstrap',
+        'bootstrap4'     => 'CodeIgniter\Pager\Views\bootstrap4', // <-- pastikan ada
+        'bootstrap_pagination' => 'App\Views\pager\bootstrap4', // alias tambahan
     ];
 
     /**

@@ -174,3 +174,40 @@ footer {
 .entry .right-img {
     float: right;
 }
+.pagination-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pagination li {
+    margin: 0 2px;
+}
+
+.pagination li a, 
+.pagination li span {
+    display: block;
+    padding: 6px 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pagination li.active span {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination li a:hover {
+    background: #f1f1f1;
+}
