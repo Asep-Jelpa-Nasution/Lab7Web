@@ -11,4 +11,5 @@
 ## Universitas : Universitas Pelita Bangsa
 
 ## Hasil Praktikum 1: PHP Framework (Codeigniter)
-![xampp](img/Picture1.png.png)
+
+![xampp](img/Picture1.png)
