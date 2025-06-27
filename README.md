@@ -9,3 +9,6 @@
 ## Dosen Pengampu : Agung Nugroho, S.Kom., M.Kom
 
 ## Universitas : Universitas Pelita Bangsa
+
+## Hasil Praktikum 1: PHP Framework (Codeigniter)
+![xampp](img/Picture1.png.png)
