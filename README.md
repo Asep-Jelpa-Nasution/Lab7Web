@@ -66,3 +66,40 @@ Penjelasan :
 ## Praktikum 4: Modul Login
 
 ![xampp](img/Picture26.png)
+
+## Praktikum 5 : Pagination dan Pencarian
+
+## 🎯 Tujuan Praktikum
+
+1. Memahami konsep dasar **Pagination**
+2. Memahami konsep dasar **Pencarian**
+3. Menerapkan pagination dan search menggunakan **CodeIgniter 4**
+
+### 1. Menambahkan Pagination pada Daftar Artikel
+
+📸 **Screenshot hasil pagination:**
+
+![xampp](img/Picture27.png)
+
+### 2. Menambahkan Fitur Pencarian Artikel
+
+📸 **Screenshot fitur pencarian:**
+
+![xampp](img/Picture28.png)
+
+## 3. Pengujian Fitur
+
+✅ Pagination muncul ketika data lebih dari 4  
+✅ Fitur pencarian bekerja menampilkan hasil sesuai keyword  
+✅ Pencarian dan pagination dapat berjalan bersamaan
+
+📸 **Hasil Pengujian:**
+
+- Tampil daftar artikel dengan paging  
+  ![xampp](img/Picture29.png)
+
+- Tampilkan hasil pencarian  
+  ![xampp](img/Picture30.png)
+
+- Navigasi pagination aktif  
+  ![xampp](img/Picture31.png)
