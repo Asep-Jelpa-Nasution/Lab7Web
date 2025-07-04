@@ -67,6 +67,8 @@ Penjelasan :
 
 ![xampp](img/Picture26.png)
 
+---
+
 ## Praktikum 5 : Pagination dan Pencarian
 
 ## 🎯 Tujuan Praktikum
@@ -75,17 +77,23 @@ Penjelasan :
 2. Memahami konsep dasar **Pencarian**
 3. Menerapkan pagination dan search menggunakan **CodeIgniter 4**
 
+---
+
 ### 1. Menambahkan Pagination pada Daftar Artikel
 
 📸 **Screenshot hasil pagination:**
 
 ![xampp](img/Picture27.png)
 
+---
+
 ### 2. Menambahkan Fitur Pencarian Artikel
 
 📸 **Screenshot fitur pencarian:**
 
 ![xampp](img/Picture28.png)
+
+---
 
 ## 3. Pengujian Fitur
 
@@ -103,3 +111,44 @@ Penjelasan :
 
 - Navigasi pagination aktif  
   ![xampp](img/Picture31.png)
+
+---
+
+## Praktikum 6: Upload File Gambar
+## 🎯 Tujuan Praktikum
+
+1. Memahami konsep dasar file upload.
+2. Mengimplementasikan upload gambar menggunakan CodeIgniter 4.
+
+### 1. Menambahkan Fungsi Upload pada Controller
+📸 **Screenshot pengaturan method add:**
+
+![xampp](img/Picture32.png)
+
+---
+
+### 2. Tambahkan Input File pada Form Tambah Artikel
+📸 **Screenshot input file:**
+
+![xampp](img/Picture33.png)
+
+---
+
+### 3. Ubah Tag Form agar Mendukung Upload File
+📸 **Screenshot form dengan enctype:**
+
+![xampp](img/Picture34.png)
+
+---
+
+### 4. Uji Coba Fitur Upload Gambar
+
+Setelah semua selesai, lakukan uji coba dengan:
+- Mengisi judul dan isi artikel
+- Memilih gambar
+- Submit form
+
+📸 **Screenshot hasil upload dan penyimpanan gambar:**
+
+![xampp](img/Picture35.png)
+![xampp](img/Picture36.png)
