@@ -57,7 +57,12 @@ Penjelasan :
    View layout berfungsi sebagai kerangka utama, sedangkan view biasa hanya mengisi kontennya saja.
 
 • Jelaskan perbedaan antara View Cell dan View biasa
-   • View Biasa adalah file tampilan yang biasanya dipanggil dari controller menggunakan return view('nama_view'). Biasanya digunakan untuk menampilkan satu halaman penuh.
-   • View Cell adalah komponen kecil yang bisa digunakan di dalam view lain dengan cara <?= view_cell('NamaClass::method') ?>. Biasanya digunakan untuk bagian tertentu yang ingin digunakan berulang kali, seperti daftar artikel terbaru, sidebar, atau widget.
-   • Perbedaan utama:
+
+1. View Biasa adalah file tampilan yang biasanya dipanggil dari controller menggunakan return view('nama_view'). Biasanya digunakan untuk menampilkan satu halaman penuh.
+2. View Cell adalah komponen kecil yang bisa digunakan di dalam view lain dengan cara <?= view_cell('NamaClass::method') ?>. Biasanya digunakan untuk bagian tertentu yang ingin digunakan berulang kali, seperti daftar artikel terbaru, sidebar, atau widget.
+3. Perbedaan utama:
    View biasa cocok untuk tampilan utama, sementara View Cell cocok untuk komponen kecil yang dinamis dan modular.
+
+## Praktikum 4: Modul Login
+
+![xampp](img/Picture26.png)
