@@ -1,40 +1,119 @@
 <?= $this->include('template/admin_header'); ?>
 
-<h2 style="text-align: center; margin-top: 30px;"><?= $title; ?></h2>
+<div class="form-wrapper container my-5">
+    <h2 class="text-center mb-4"><?= $title; ?></h2>
 
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-    <form action="" method="post" style="width: 100%; max-width: 600px; background-color: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-
-        <div style="margin-bottom: 20px;">
-            <label for="judul" style="display: block; font-weight: bold; margin-bottom: 8px;">Judul Artikel</label>
-            <input
-                type="text"
-                name="judul"
-                id="judul"
-                value="<?= $data['judul']; ?>"
-                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"
-                required>
+    <form action="" method="post" enctype="multipart/form-data" class="dark-form mx-auto">
+        <!-- Judul -->
+        <div class="form-group mb-3">
+            <label for="judul" class="form-label">Judul Artikel</label>
+            <input type="text" name="judul" id="judul" class="form-control input-dark"
+                value="<?= esc($artikel['judul']); ?>"
+                placeholder="Masukkan judul artikel" required>
         </div>
 
-        <div style="margin-bottom: 20px;">
-            <label for="isi" style="display: block; font-weight: bold; margin-bottom: 8px;">Isi Artikel</label>
-            <textarea
-                name="isi"
-                id="isi"
-                cols="50"
-                rows="10"
-                style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"
-                required><?= $data['isi']; ?></textarea>
+        <!-- Isi -->
+        <div class="form-group mb-3">
+            <label for="isi" class="form-label">Isi Artikel</label>
+            <textarea name="isi" id="isi" rows="8" class="form-control input-dark"
+                placeholder="Tulis isi artikel..." required><?= esc($artikel['isi']); ?></textarea>
         </div>
 
-        <div style="text-align: right;">
-            <input
-                type="submit"
-                value="Kirim"
-                class="btn btn-primary"
-                style="padding: 10px 20px; font-weight: bold;">
+        <!-- Kategori -->
+        <div class="form-group mb-3">
+            <label for="id_kategori" class="form-label">Kategori</label>
+            <select name="id_kategori" id="id_kategori" class="form-select input-dark" required>
+                <option value="">-- Pilih Kategori --</option>
+                <?php foreach ($kategori as $k): ?>
+                    <option value="<?= $k['id_kategori']; ?>"
+                        <?= ($artikel['id_kategori'] == $k['id_kategori']) ? 'selected' : ''; ?>>
+                        <?= esc($k['nama_kategori']); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+
+        <!-- Gambar (Optional jika ingin ganti gambar) -->
+        <div class="form-group mb-4">
+            <label for="gambar" class="form-label">Ganti Gambar (Opsional)</label>
+            <input type="file" name="gambar" id="gambar" class="form-control input-dark">
+        </div>
+
+        <!-- Tombol -->
+        <div class="text-end">
+            <input type="submit" value="Update" class="btn btn-success px-4 py-2 fw-bold">
         </div>
     </form>
 </div>
 
 <?= $this->include('template/admin_footer'); ?>
+
+<!-- Tambahan CSS -->
+<style>
+    .form-wrapper {
+        max-width: 700px;
+        background-color: #2c3e50;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        color: #ecf0f1;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #ecf0f1;
+    }
+
+    .input-dark {
+        background-color: #34495e;
+        border: 1px solid #1abc9c;
+        color: #fff;
+    }
+
+    .input-dark:focus {
+        background-color: #3c5a6a;
+        border-color: #10b981;
+        color: #fff;
+    }
+
+    .btn-success {
+        background-color: #10b981;
+        border: none;
+    }
+
+    .btn-success:hover {
+        background-color: #0e9e76;
+    }
+
+    select.input-dark option {
+        background-color: #34495e;
+        color: #ecf0f1;
+    }
+
+    ::placeholder {
+        color: #ffffff !important;
+        opacity: 0.8;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #ffffff !important;
+    }
+
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+        color: #ffffff !important;
+        opacity: 0.8;
+    }
+
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+        color: #ffffff !important;
+        opacity: 0.8;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #ffffff !important;
+    }
+</style>

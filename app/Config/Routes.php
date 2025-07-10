@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 $routes->get('/artikel', 'Artikel::index');
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
@@ -17,8 +17,8 @@ $routes->get('/contact', 'Page::contact');
 $routes->get('/faqs', 'Page::faqs');
 $routes->get('/tos', 'Page::tos');
 
-// Tambahkan ini
-$routes->match(['get', 'post'], '/user/login', 'User::login');
+// Baris ini telah diperbarui:
+$routes->match(['GET', 'POST'], '/user/login', 'User::login');
 
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('artikel', 'Artikel::admin_index');
