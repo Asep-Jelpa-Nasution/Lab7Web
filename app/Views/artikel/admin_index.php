@@ -3,22 +3,21 @@
 <div class="container my-4">
     <!-- Search & Filter Form -->
     <form id="search-form" method="get" class="form-search mb-4">
-        <div class="row g-2">
-            <div class="col-md-5">
-                <input type="text" name="q" id="search-box" placeholder="Cari data" class="form-control">
-            </div>
-            <div class="col-md-4">
-                <select name="kategori_id" id="kategori-filter" class="form-control">
-                    <option value="">Semua Kategori</option>
-                    <?php foreach ($kategori as $k): ?>
-                        <option value="<?= $k['id_kategori']; ?>"><?= $k['nama_kategori']; ?></option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <button type="submit" class="btn btn-primary w-100">Cari</button>
-            </div>
+        <div class="col-md-5">
+            <input type="text" name="q" id="search-box" placeholder="Cari Artikel..." class="form-control">
         </div>
+        <div class="col-md-4">
+            <select name="kategori_id" id="kategori-filter" class="form-control">
+                <option value="">Pilih Kategori</option>
+                <?php foreach ($kategori as $k): ?>
+                    <option value="<?= $k['id_kategori']; ?>"><?= $k['nama_kategori']; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary w-100">Temukan</button>
+        </div>
+
     </form>
 
     <!-- Spinner Loading -->
@@ -90,10 +89,13 @@
                     <td>${row.id}</td>
                     <td><b>${row.judul}</b><p><small>${row.isi.substring(0, 50)}...</small></p></td>
                     <td>${row.nama_kategori || '-'}</td>
-                     <td>
-                     ${row.gambar ? `<img src="/gambar/${row.gambar}" alt="gambar" style="width: 70px; height: auto; border-radius: 6px;">` : '-'}
+                    <td>${row.gambar ? `<img src="/gambar/${row.gambar}" alt="gambar" style="width: 70px; height: auto; border-radius: 6px;">` : '-'}
                     </td>
-                    <td>${row.status}</td>
+                    <td>${row.status == 1 
+                        ? '<span class="badge bg-success">Aktif</span>' 
+                        : '<span class="badge bg-secondary">Tidak Aktif</span>'}
+                    </td>
+                    
                     <td>
                         <a href="/admin/artikel/edit/${row.id}" class="btn btn-warning btn-sm">Ubah</a>
                         <a href="/admin/artikel/delete/${row.id}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin menghapus data?');">Hapus</a>
