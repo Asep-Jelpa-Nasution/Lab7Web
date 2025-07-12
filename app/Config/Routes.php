@@ -55,3 +55,4 @@ $routes->options('post', 'PostApi::options');
 $routes->options('post/(:any)', 'PostApi::options');
 
 $routes->get('dashboard', 'Admin::dashboard');
+$routes->resource('kategori'); 
