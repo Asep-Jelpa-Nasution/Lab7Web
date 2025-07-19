@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $title; ?></title>
-    <link rel="stylesheet" href="<?= base_url('/style.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
 </head>
 
 <body>

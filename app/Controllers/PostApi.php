@@ -46,9 +46,9 @@ class PostApi extends ResourceController
         try {
             $this->model->insert($data);
             return $this->respondCreated([
-                'status' => 201,
+                'status'  => 201,
                 'message' => 'Data berhasil disimpan.',
-                'data' => $data
+                'data'    => $data
             ]);
         } catch (\Exception $e) {
             return $this->failServerError($e->getMessage());
@@ -63,27 +63,35 @@ class PostApi extends ResourceController
             return $this->failNotFound("Data dengan ID $id tidak ditemukan.");
         }
 
-        // Tangani JSON maupun x-www-form-urlencoded
-        $input = $this->request->getRawInput(); // JSON
+        // Ambil data dari JSON atau form
+        $input = $this->request->getRawInput();
         if (empty($input)) {
-            $input = $this->request->getVar(); // form-data
+            $input = $this->request->getVar();
         }
 
-        if (empty($input['judul']) || empty($input['isi'])) {
-            return $this->failValidationErrors('Judul dan isi wajib diisi.');
+        // Validasi yang lebih aman
+        if (!isset($input['judul'], $input['isi'], $input['id_kategori'])) {
+            return $this->failValidationErrors('Judul, isi, dan id_kategori wajib diisi.');
+        }
+
+        if (trim($input['judul']) === '' || trim($input['isi']) === '' || trim($input['id_kategori']) === '') {
+            return $this->failValidationErrors('Judul, isi, dan id_kategori tidak boleh kosong.');
         }
 
         $data = [
-            'judul' => $input['judul'],
-            'isi'   => $input['isi']
+            'judul'       => $input['judul'],
+            'isi'         => $input['isi'],
+            'status'      => $input['status'] ?? 0,
+            'id_kategori' => $input['id_kategori'],
+            'slug'        => url_title($input['judul'], '-', true),
         ];
 
         try {
             $this->model->update($id, $data);
             return $this->respond([
-                'status' => 200,
+                'status'  => 200,
                 'message' => 'Data berhasil diperbarui.',
-                'data' => $data
+                'data'    => $data
             ]);
         } catch (\Exception $e) {
             return $this->failServerError($e->getMessage());
@@ -100,7 +108,7 @@ class PostApi extends ResourceController
 
         $this->model->delete($id);
         return $this->respondDeleted([
-            'status' => 200,
+            'status'  => 200,
             'message' => 'Data berhasil dihapus.'
         ]);
     }
@@ -116,8 +124,6 @@ class PostApi extends ResourceController
             return $this->failNotFound("Data dengan ID $id tidak ditemukan.");
         }
     }
-
-    // Untuk preflight CORS
     public function options()
     {
         $this->setCors();

@@ -1,0 +1,184 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Variabel Warna */
+:root {
+    --soft-white: #F5F7FA;
+    --charcoal-gray: #2E2E2E;
+    --azure-blue: #007BFF;
+    --silver-gray: #D0D0D0;
+    --deep-purple: #5E17EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--soft-white);
+    color: var(--charcoal-gray);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container */
+.container,
+#container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header,
+header h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--deep-purple);
+    padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--azure-blue);
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+/* Form & Button */
+input[type="text"], select {
+    background-color: white;
+    color: var(--charcoal-gray);
+    border: 1px solid var(--silver-gray);
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button, .btn, input[type="submit"] {
+    background-color: var(--azure-blue);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: var(--charcoal-gray);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--silver-gray);
+    text-align: left;
+}
+
+th {
+    background-color: var(--soft-white);
+    color: var(--deep-purple);
+}
+
+tr:nth-child(even) {
+    background-color: #f0f2f5;
+}
+
+/* Badge Status */
+.badge-success {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Pagination */
+.pagination-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    gap: 5px;
+}
+
+.pagination li a,
+.pagination li span {
+    display: block;
+    padding: 8px 12px;
+    color: var(--charcoal-gray);
+    background: white;
+    border: 1px solid var(--silver-gray);
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.pagination li.active span {
+    background: var(--azure-blue);
+    color: white;
+    border-color: var(--azure-blue);
+}
+
+.pagination li a:hover {
+    background-color: var(--azure-blue);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    color: var(--charcoal-gray);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}

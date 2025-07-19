@@ -20,7 +20,7 @@ $routes->get('/artikel', 'Artikel::index');
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 
 
-$routes->group('admin', function ($routes) {
+$routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('/admin/dashboard', 'Admin::dashboard');
     $routes->get('artikel', 'Artikel::admin_index');
     $routes->add('artikel/add', 'Artikel::add');
@@ -55,4 +55,4 @@ $routes->options('post', 'PostApi::options');
 $routes->options('post/(:any)', 'PostApi::options');
 
 $routes->get('dashboard', 'Admin::dashboard');
-$routes->resource('kategori'); 
+$routes->resource('kategori');

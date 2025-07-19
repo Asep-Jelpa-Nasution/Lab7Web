@@ -1,0 +1,796 @@
+CRITICAL - 2025-07-14 20:36:07 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\lab11_c1\ci4\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 61.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(61): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\lab11_c1\\ci4\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(320): service('codeigniter')
+23 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-14 20:37:00 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\lab11_c1\ci4\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 61.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(61): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\lab11_c1\\ci4\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(320): service('codeigniter')
+23 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-14 20:43:21 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\lab11_c1\ci4\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 61.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(61): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\lab11_c1\\ci4\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(320): service('codeigniter')
+23 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-07-14 20:44:29 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\lab11_c1\ci4\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 61.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(61): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\lab11_c1\\ci4\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(320): service('codeigniter')
+23 SYSTEMPATH\Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2025-07-14 18:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 18:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:45:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 19:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-14 20:20:28 --> mysqli_sql_exception: Unknown column 'kategori' in 'field list' in C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\lab11_c1\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_c1\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_c1\ci4\app\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+#8 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', Array, 'App\\Cells\\Kateg...')
+#9 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Kateg...', Array, 0, 'AppCellsKategor...')
+#10 C:\xampp\htdocs\lab11_c1\ci4\app\Views\layout\main.php(26): view_cell('App\\Cells\\Kateg...')
+#11 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_c1\ci4\app\Controllers\Home.php(16): view('home', Array)
+#16 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(933): App\Controllers\Home->home()
+#17 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_c1\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_c1\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-07-14 20:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(16): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:20:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(16): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:20:28 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(16): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+ERROR - 2025-07-14 20:20:30 --> mysqli_sql_exception: Unknown column 'kategori' in 'field list' in C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\lab11_c1\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_c1\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_c1\ci4\app\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+#8 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', Array, 'App\\Cells\\Kateg...')
+#9 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Kateg...', Array, 0, 'AppCellsKategor...')
+#10 C:\xampp\htdocs\lab11_c1\ci4\app\Views\layout\main.php(26): view_cell('App\\Cells\\Kateg...')
+#11 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_c1\ci4\app\Controllers\Home.php(16): view('home', Array)
+#16 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(933): App\Controllers\Home->home()
+#17 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_c1\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_c1\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-07-14 20:20:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(16): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:20:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(16): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:20:30 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(16): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+ERROR - 2025-07-14 20:21:50 --> mysqli_sql_exception: Unknown column 'kategori' in 'field list' in C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\lab11_c1\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_c1\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_c1\ci4\app\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+#8 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', Array, 'App\\Cells\\Kateg...')
+#9 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Kateg...', Array, 0, 'AppCellsKategor...')
+#10 C:\xampp\htdocs\lab11_c1\ci4\app\Views\layout\main.php(26): view_cell('App\\Cells\\Kateg...')
+#11 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_c1\ci4\app\Controllers\Home.php(14): view('home', Array)
+#16 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(933): App\Controllers\Home->home()
+#17 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_c1\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_c1\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-07-14 20:21:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(14): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:21:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(14): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:21:50 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(14): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+ERROR - 2025-07-14 20:22:45 --> mysqli_sql_exception: Unknown column 'kategori' in 'field list' in C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\lab11_c1\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_c1\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_c1\ci4\app\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+#8 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', Array, 'App\\Cells\\Kateg...')
+#9 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Kateg...', Array, 0, 'AppCellsKategor...')
+#10 C:\xampp\htdocs\lab11_c1\ci4\app\Views\layout\main.php(26): view_cell('App\\Cells\\Kateg...')
+#11 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_c1\ci4\app\Controllers\Home.php(14): view('home', Array)
+#16 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(933): App\Controllers\Home->home()
+#17 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_c1\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_c1\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-07-14 20:22:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(14): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:22:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(14): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:22:45 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(14): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+ERROR - 2025-07-14 20:22:49 --> mysqli_sql_exception: Unknown column 'kategori' in 'field list' in C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lab11_c1\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\lab11_c1\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\lab11_c1\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\lab11_c1\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\lab11_c1\ci4\app\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+#8 C:\xampp\htdocs\lab11_c1\ci4\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', Array, 'App\\Cells\\Kateg...')
+#9 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Kateg...', Array, 0, 'AppCellsKategor...')
+#10 C:\xampp\htdocs\lab11_c1\ci4\app\Views\layout\main.php(26): view_cell('App\\Cells\\Kateg...')
+#11 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\lab11_c1\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\lab11_c1\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\lab11_c1\ci4\app\Controllers\Home.php(14): view('home', Array)
+#16 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(933): App\Controllers\Home->home()
+#17 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\lab11_c1\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\lab11_c1\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\lab11_c1\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\lab11_c1\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-07-14 20:22:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+[Method: GET, Route: home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(14): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:22:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(14): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+CRITICAL - 2025-07-14 20:22:49 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `kategori`
+FROM `artikel`
+WHERE kategori IS NOT NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\KategoriDropdown.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(283): App\Cells\KategoriDropdown->render()
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\KategoriDropdown), 'render', [], 'App\\Cells\\KategoriDropdown')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\KategoriDropdown::render', [], 0, 'AppCellsKategoriDropdownrender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(26): view_cell('App\\Cells\\KategoriDropdown::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lab11_c1\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(14): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_c1\\ci4\\public\\index.php')
+DEBUG - 2025-07-14 20:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-14 20:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

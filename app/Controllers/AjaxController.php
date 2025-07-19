@@ -3,20 +3,23 @@
 namespace App\Controllers;
 
 use App\Models\ArtikelModel;
+use App\Models\KategoriModel;
 use CodeIgniter\Controller;
 
 class AjaxController extends Controller
 {
     protected $helpers = ['form', 'url'];
 
-    // Halaman utama AJAX
     public function index()
     {
-        $data = ['title' => 'Data Artikel'];
+        $kategoriModel = new KategoriModel();
+        $data = [
+            'title' => 'Data Artikel',
+            'kategori' => $kategoriModel->findAll()
+        ];
         return view('ajax/index', $data);
     }
 
-    // Ambil semua data artikel (JSON)
     public function getData()
     {
         $model = new ArtikelModel();
@@ -25,25 +28,26 @@ class AjaxController extends Controller
         return $this->response->setJSON($data);
     }
 
-    // Tambah artikel baru (POST)
     public function save()
     {
-        $judul = $this->request->getPost('judul');
-        $isi   = $this->request->getPost('isi');
+        $judul       = $this->request->getPost('judul');
+        $isi         = $this->request->getPost('isi');
+        $id_kategori = $this->request->getPost('id_kategori');
 
-        if (empty($judul) || empty($isi)) {
+        if (empty($judul) || empty($isi) || empty($id_kategori)) {
             return $this->response->setJSON([
                 'status' => 'ERROR',
-                'message' => 'Judul dan isi tidak boleh kosong.'
+                'message' => 'Judul, isi, dan kategori wajib diisi.'
             ]);
         }
 
         $model = new ArtikelModel();
         $data = [
-            'judul'  => $judul,
-            'isi'    => $isi,
-            'slug'   => url_title($judul, '-', true), // Buat slug dari judul
-            'status' => 1 // Default: Published
+            'judul'       => $judul,
+            'isi'         => $isi,
+            'slug'        => url_title($judul, '-', true),
+            'status'      => 1,
+            'id_kategori' => $id_kategori
         ];
 
         if ($model->insert($data)) {
@@ -58,7 +62,7 @@ class AjaxController extends Controller
             'message' => 'Gagal menambahkan data'
         ]);
     }
-
+    
     // Ambil satu data artikel berdasarkan ID (GET)
     public function edit($id)
     {

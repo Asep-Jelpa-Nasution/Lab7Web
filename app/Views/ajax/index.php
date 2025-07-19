@@ -38,6 +38,15 @@
                     <label for="isi" class="form-label">Isi</label>
                     <textarea name="isi" class="form-control" rows="4" required></textarea>
                 </div>
+                <div class="mb-3">
+                    <label for="id_kategori" class="form-label">Kategori</label>
+                    <select name="id_kategori" class="form-select" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <?php foreach ($kategori as $kat): ?>
+                            <option value="<?= $kat['id_kategori'] ?>"><?= esc($kat['nama_kategori']) ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Simpan</button>
@@ -45,6 +54,7 @@
         </form>
     </div>
 </div>
+
 
 <!-- Modal Edit -->
 <div class="modal fade" id="modalEdit" tabindex="-1">
