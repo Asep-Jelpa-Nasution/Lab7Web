@@ -64,7 +64,7 @@ class PostApi extends ResourceController
         }
 
         // Ambil data dari JSON atau form
-        $input = $this->request->getRawInput();
+        $input = $this->request->getJSON(true);
         if (empty($input)) {
             $input = $this->request->getVar();
         }
