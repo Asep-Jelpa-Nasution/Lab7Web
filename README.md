@@ -273,6 +273,7 @@ Modul ini membahas penggunaan AJAX untuk menampilkan dan menghapus data artikel 
 ![screenshot](img/admin_artikel.png)
 | 2️⃣ | Setelah melakukan pencarian | Isi kolom search, klik "Cari" |
 ![screenshot](img/cari.png)
+
 | 3️⃣ | Filter kategori aktif | Pilih kategori tertentu |
 ![screenshot](img/kategori_artikel.png)
 | 4️⃣ | Pagination AJAX berhasil | Klik halaman 2, data berubah tanpa reload |
@@ -412,6 +413,7 @@ class Post extends ResourceController
 Gunakan Postman atau REST client lainnya.
 
 GET http://localhost:8080/post
+
 ![screenshot](img/get_data.png)
 
 GET http://localhost:8080/post/{id}
