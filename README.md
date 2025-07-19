@@ -216,7 +216,7 @@ Modul ini membahas penggunaan AJAX untuk menampilkan dan menghapus data artikel 
 ![screenshot](img/edit.png)
 
 ### Tombol +Tambah Artikel AJAX
-![screenshot](img/+TambahArtikel.png)
+![screenshot](img/TambahArtikel.png)
 
 
 
@@ -321,6 +321,9 @@ CREATE TABLE `post` (
 );
 
 ### 2. Routing
+
+![screenshot](img/php_spark_routes.png)
+
 Tambahkan ke app/Config/Routes.php:
 $routes->resource('post');
 
@@ -340,7 +343,6 @@ class PostModel extends Model
     protected $returnType = 'array';
 }
 
-![screenshot](img/php_spark_routes.png)
 
 ### 4. Post Controller (app/Controllers/Post.php)
 namespace App\Controllers;
@@ -413,7 +415,7 @@ GET http://localhost:8080/post
 ![screenshot](img/get_data.png)
 
 GET http://localhost:8080/post/{id}
-![screenshot](img/get1.png)
+![screenshot](img/get20.png)
 
 POST http://localhost:8080/post (form-data: judul, isi, id_kategori)
 ![screenshot](img/post.png)
